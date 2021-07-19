@@ -94,7 +94,7 @@ class JugarActivity : AppCompatActivity() {
 
     private fun inicializar(){
 
-            val numeroNuevo = (0..Palabra.Palabras.size).random()
+            val numeroNuevo = (0..Palabra.Palabras.size-1).random()
 
             palabraActual = Palabra.Palabras[numeroNuevo]
 

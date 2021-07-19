@@ -7,6 +7,19 @@
     android:background="@drawable/backgroundproyecto2"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/IVLogo"
+        android:layout_width="00dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="135dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnJugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barras__1_" />
+
     <Button
         android:id="@+id/btnJugar"
         android:layout_width="wrap_content"
@@ -16,7 +29,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVLife6" />
 
     <Button
         android:id="@+id/btnCrear"
