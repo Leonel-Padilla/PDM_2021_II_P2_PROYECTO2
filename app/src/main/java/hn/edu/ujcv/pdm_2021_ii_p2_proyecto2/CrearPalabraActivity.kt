@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import hn.edu.ujcv.pdm_2021_ii_p2_proyecto2.Clases.Palabra
 import kotlinx.android.synthetic.main.activity_crear_palabra.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class CrearPalabraActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

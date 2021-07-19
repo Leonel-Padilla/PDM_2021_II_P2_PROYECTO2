@@ -73,41 +73,46 @@ class JugarActivity : AppCompatActivity() {
             IVFase1.visibility = View.INVISIBLE
             IVFase2.visibility = View.VISIBLE
             IVLife6.visibility = View.INVISIBLE
+            Toast.makeText(applicationContext, "5 vidas restantes", Toast.LENGTH_SHORT).show()
         }else if(contadorDerrota == 2){
             IVFase2.visibility = View.INVISIBLE
             IVFase3.visibility = View.VISIBLE
             IVLife5.visibility = View.INVISIBLE
+            Toast.makeText(applicationContext, "4 vidas restantes", Toast.LENGTH_SHORT).show()
         }else if(contadorDerrota == 3){
             IVFase3.visibility = View.INVISIBLE
             IVFase4.visibility = View.VISIBLE
             IVLife4.visibility = View.INVISIBLE
+            Toast.makeText(applicationContext, "3 vidas restantes", Toast.LENGTH_SHORT).show()
         }else if(contadorDerrota == 4){
             IVFase4.visibility = View.INVISIBLE
             IVFase5.visibility = View.VISIBLE
             IVLife3.visibility = View.INVISIBLE
+            Toast.makeText(applicationContext, "2 vidas restantes", Toast.LENGTH_SHORT).show()
         }else if(contadorDerrota == 5){
             IVFase5.visibility = View.INVISIBLE
             IVFase6.visibility = View.VISIBLE
             IVLife2.visibility = View.INVISIBLE
+            Toast.makeText(applicationContext, "1 vida restante", Toast.LENGTH_SHORT).show()
         }
     }
 
     private fun inicializar(){
-        val range = IntRange(0, Palabra.Palabras.size+1)
-        val numeroNuevo = (0..Palabra.Palabras.size).random()
 
-        palabraActual = Palabra.Palabras[numeroNuevo]
-        Toast.makeText(applicationContext, "Numero  $numeroNuevo Palabra ${palabraActual.Palabra}", Toast.LENGTH_SHORT).show()
+            val range = IntRange(0, Palabra.Palabras.size+1)
+            val numeroNuevo = (0..Palabra.Palabras.size).random()
 
-        val palabra1 = palabraActual.Palabra
-        txvPistaDetalle.text = palabraActual.Pista
+            palabraActual = Palabra.Palabras[numeroNuevo]
 
-        for (letra in palabra1){
-            numeroGuiones = numeroGuiones+"-"
-            todosGuines.add("-")
-            letrasPalabra.add(letra)
+            val palabra1 = palabraActual.Palabra
+            txvPistaDetalle.text = palabraActual.Pista
+
+            for (letra in palabra1){
+                numeroGuiones = numeroGuiones+"-"
+                todosGuines.add("-")
+                letrasPalabra.add(letra)
+            }
+            txvCantidadLetras.text = numeroGuiones
         }
-        txvCantidadLetras.text = numeroGuiones
-    }
 
 }
