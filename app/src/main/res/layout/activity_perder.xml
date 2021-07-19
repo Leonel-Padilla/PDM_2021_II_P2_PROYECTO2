@@ -8,23 +8,23 @@
     tools:context=".PerderActivity">
 
     <Button
-        android:id="@+id/btnMenuPrincipal"
+        android:id="@+id/btnMenuPrincipal2"
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:layout_marginTop="616dp"
         android:layout_marginEnd="11dp"
         android:background="@drawable/boton4_removebg_preview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnJugardeNuevo"
+        app:layout_constraintStart_toEndOf="@+id/btnJugardeNuevo2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnJugardeNuevo"
+        android:id="@+id/btnJugardeNuevo2"
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:layout_marginTop="616dp"
         android:background="@drawable/boton3_removebg_preview"
-        app:layout_constraintEnd_toStartOf="@+id/btnMenuPrincipal"
+        app:layout_constraintEnd_toStartOf="@+id/btnMenuPrincipal2"
         app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

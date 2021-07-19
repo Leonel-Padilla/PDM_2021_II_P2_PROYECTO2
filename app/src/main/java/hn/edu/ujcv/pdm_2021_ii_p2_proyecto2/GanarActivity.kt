@@ -11,10 +11,15 @@ class GanarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ganar)
         btnJugardeNuevo.setOnClickListener { Jugar() }
+        btnMenuPrincipal.setOnClickListener { Menu() }
     }
 
     private fun Jugar() {
         val intent  = Intent(this, JugarActivity::class.java)
+        startActivity(intent)
+    }
+    private fun Menu() {
+        val intent  = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 }
