@@ -67,11 +67,12 @@
 
     <Button
         android:id="@+id/btnGuardar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
         android:layout_marginBottom="41dp"
-        android:text="Guardar"
-        android:textColor="#FFFFFF"
+        android:background="@drawable/boton6_removebg_preview"
+        android:backgroundTint="#FFD83B37"
+        android:textColor="#FFD83B37"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

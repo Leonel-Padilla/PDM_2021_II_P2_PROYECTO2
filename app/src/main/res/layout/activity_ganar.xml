@@ -13,14 +13,25 @@
         android:src="@drawable/ganadorproyecto21"></pl.droidsonroids.gif.GifImageView>
 
     <Button
+        android:id="@+id/btnMenuPrincipal"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="616dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/boton4_removebg_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnJugardeNuevo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/btnJugardeNuevo"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="664dp"
-        android:text="Jugar de Nuevo"
-        app:layout_constraintEnd_toStartOf="@+id/gifImageView"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/gifImageView"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="616dp"
+        android:background="@drawable/boton3_removebg_preview"
+        app:layout_constraintEnd_toStartOf="@+id/btnMenuPrincipal"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
