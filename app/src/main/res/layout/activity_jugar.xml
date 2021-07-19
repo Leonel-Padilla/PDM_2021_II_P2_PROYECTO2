@@ -10,52 +10,198 @@
         android:id="@+id/btnProbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="66dp"
         android:text="Probar Letra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txvPistaDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/txvPistaDetalle" />
+
+    <ImageView
+        android:id="@+id/IVLife1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/IVLife3"
+        app:layout_constraintEnd_toStartOf="@+id/IVLife3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/new_project" />
+
+    <ImageView
+        android:id="@+id/IVLife2"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/IVLife1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/new_project" />
+
+    <ImageView
+        android:id="@+id/IVLife3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="311dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/IVLife6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IVLife1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVLife1"
+        app:srcCompat="@drawable/new_project" />
+
+    <ImageView
+        android:id="@+id/IVLife4"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="75dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/IVLife2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/new_project" />
+
+    <ImageView
+        android:id="@+id/IVLife5"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/IVLife3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/new_project" />
+
+    <ImageView
+        android:id="@+id/IVLife6"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginBottom="323dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txvCantidadLetras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVLife3"
+        app:srcCompat="@drawable/new_project" />
+
+    <ImageView
+        android:id="@+id/IVFase1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txvCantidadLetras"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvCantidadLetras" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fase1" />
+
+    <ImageView
+        android:id="@+id/IVFase2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="272dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnProbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fase2" />
+
+    <ImageView
+        android:id="@+id/IVFase3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="272dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnProbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fase3" />
+
+    <ImageView
+        android:id="@+id/IVFase4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="272dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnProbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fase4" />
+
+    <ImageView
+        android:id="@+id/IVFase5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="272dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnProbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fase5" />
+
+    <ImageView
+        android:id="@+id/IVFase6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="272dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnProbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fase6" />
 
     <TextView
         android:id="@+id/txvCantidadLetras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginBottom="291dp"
         android:text="Numero de letras"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVLife6" />
 
     <EditText
         android:id="@+id/txtLetra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="154dp"
+        android:layout_marginBottom="18dp"
         android:ems="10"
         android:hint="Introduzca una letra"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/IVFase1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txvPistaEncabezado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="45dp"
         android:text="Pista:"
         app:layout_constraintBottom_toTopOf="@+id/txvPistaDetalle"
-        app:layout_constraintEnd_toEndOf="@+id/txvPistaDetalle" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvCantidadLetras" />
 
     <TextView
         android:id="@+id/txvPistaDetalle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="49dp"
         android:text="Aquí se mostrará la pista"
         app:layout_constraintBottom_toTopOf="@+id/btnProbar"
-        app:layout_constraintStart_toStartOf="@+id/btnProbar" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvPistaEncabezado" />
 </androidx.constraintlayout.widget.ConstraintLayout>

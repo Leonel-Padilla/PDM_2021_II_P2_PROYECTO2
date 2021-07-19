@@ -1,7 +1,9 @@
 package hn.edu.ujcv.pdm_2021_ii_p2_proyecto2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import hn.edu.ujcv.pdm_2021_ii_p2_proyecto2.Clases.Palabra
 import kotlinx.android.synthetic.main.activity_jugar.*
@@ -48,17 +50,49 @@ class JugarActivity : AppCompatActivity() {
                 numeroGuiones = numeroGuiones+guion
             }
             txvCantidadLetras.text = numeroGuiones
-
+            Hangman(contadorDerrota)
 
             //if (contadorVictoria == palabraActual.Palabra.length){
             //}
 
-            //if (contadorDerrota == palabraActual.Palabra.length){
-            //}
+            if (contadorDerrota == 6){
+                val intent  = Intent(this, PerderActivity::class.java)
+                startActivity(intent)
+            }
 
         }
     }//--
-
+    private fun Hangman(contador:Int) {
+        if (contador == 0) {
+            IVLife2.visibility = View.VISIBLE
+            IVLife3.visibility = View.VISIBLE
+            IVLife4.visibility = View.VISIBLE
+            IVLife5.visibility = View.VISIBLE
+            IVLife6.visibility = View.VISIBLE
+            IVFase6.visibility = View.INVISIBLE
+            IVFase1.visibility = View.VISIBLE
+        }else if (contador == 1){
+            IVFase1.visibility = View.INVISIBLE
+            IVFase2.visibility = View.VISIBLE
+            IVLife6.visibility = View.INVISIBLE
+        }else if(contador == 2){
+            IVFase2.visibility = View.INVISIBLE
+            IVFase3.visibility = View.VISIBLE
+            IVLife5.visibility = View.INVISIBLE
+        }else if(contador == 3){
+            IVFase3.visibility = View.INVISIBLE
+            IVFase4.visibility = View.VISIBLE
+            IVLife4.visibility = View.INVISIBLE
+        }else if(contador == 4){
+            IVFase4.visibility = View.INVISIBLE
+            IVFase5.visibility = View.VISIBLE
+            IVLife3.visibility = View.INVISIBLE
+        }else if(contador == 5){
+            IVFase5.visibility = View.INVISIBLE
+            IVFase6.visibility = View.VISIBLE
+            IVLife2.visibility = View.INVISIBLE
+        }
+    }
     private fun palabras() {
         val palabra1 = Palabra()
         palabra1.Palabra = "Gato"
