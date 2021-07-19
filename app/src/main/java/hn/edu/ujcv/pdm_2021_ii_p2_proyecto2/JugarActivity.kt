@@ -18,7 +18,6 @@ class JugarActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_jugar)
-        palabras()
         inicializar()
         btnProbar.setOnClickListener { probar() }
     }
@@ -34,16 +33,13 @@ class JugarActivity : AppCompatActivity() {
             var contador = 0
 
             for (letraAcual in letrasPalabra){
-                Toast.makeText(applicationContext, "$letraAcual", Toast.LENGTH_SHORT).show()
               if (letraAcual.toString().equals(txtLetra.text.toString())){
                   todosGuines[contador] = "$letraAcual"
-                  Toast.makeText(applicationContext, "Es igual", Toast.LENGTH_SHORT).show()
                   contadorDerrota--
                   contadorVictoria++
               }
                 contador++
             }
-            Toast.makeText(applicationContext, "todosGuines Listo", Toast.LENGTH_SHORT).show()
 
             for (guion in todosGuines){
                 numeroGuiones = numeroGuiones+guion
@@ -95,26 +91,6 @@ class JugarActivity : AppCompatActivity() {
             IVLife2.visibility = View.INVISIBLE
         }
     }
-    private fun palabras() {
-        val palabra1 = Palabra()
-        palabra1.Palabra = "Gato"
-        palabra1.Pista   = "El animal mas mierda que hay"
-
-        val palabra2 = Palabra()
-        palabra2.Palabra = "Perro"
-        palabra2.Pista   = "El animal mas hermoso, picioso, cosita hermosa que hay"
-
-        val palabra3 = Palabra()
-        palabra3.Palabra = "Carro"
-        palabra3.Pista   = "La mamalona"
-
-        Palabra.Palabras.add(palabra1)
-        Palabra.Palabras.add(palabra2)
-        Palabra.Palabras.add(palabra3)
-
-        val prueba = Palabra.Palabras
-//        Toast.makeText(applicationContext, "Ya mero", Toast.LENGTH_SHORT).show()
-    }
 
     private fun inicializar(){
         val range = IntRange(0, Palabra.Palabras.size+1)
@@ -132,8 +108,6 @@ class JugarActivity : AppCompatActivity() {
             letrasPalabra.add(letra)
         }
         txvCantidadLetras.text = numeroGuiones
+    }
 
-//        Toast.makeText(applicationContext, "Ya terminó", Toast.LENGTH_SHORT).show()
-    }//--
-
-}//-----
+}
