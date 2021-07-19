@@ -5,10 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import hn.edu.ujcv.pdm_2021_ii_p2_proyecto2.Clases.GanarActivity
 import hn.edu.ujcv.pdm_2021_ii_p2_proyecto2.Clases.Palabra
 import kotlinx.android.synthetic.main.activity_jugar.*
-import kotlin.random.Random.Default.nextInt
 
 class JugarActivity : AppCompatActivity() {
     var palabraActual       = Palabra()
@@ -64,6 +62,7 @@ class JugarActivity : AppCompatActivity() {
             }
 
         }
+        txtLetra.setText("")
     }//--
     private fun Hangman(contadorDerrota:Int) {
         if (contadorDerrota == 0) {

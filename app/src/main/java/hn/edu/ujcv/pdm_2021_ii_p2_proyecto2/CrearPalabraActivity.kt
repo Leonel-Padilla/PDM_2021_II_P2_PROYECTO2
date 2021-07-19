@@ -19,13 +19,15 @@ class CrearPalabraActivity : AppCompatActivity() {
         }else if (txtPista.text.isEmpty()){
             Toast.makeText(applicationContext, "La pista no puede estar vacia", Toast.LENGTH_SHORT).show()
         }else if(txtPalabra.text.length > 10){
-            Toast.makeText(applicationContext, "La palabra no puede tener más de YYYYYYY letras", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, "La palabra no puede tener más de 10 letras", Toast.LENGTH_SHORT).show()
         }else{
             val palabra = Palabra()
             palabra.Palabra = txtPalabra.text.toString()
             palabra.Pista = txtPista.text.toString()
             Palabra.Palabras.add(palabra)
             Toast.makeText(applicationContext, "Palabra agregada!", Toast.LENGTH_SHORT).show()
+            txtPalabra.setText("")
+            txtPista.setText("")
         }
     }
 }
